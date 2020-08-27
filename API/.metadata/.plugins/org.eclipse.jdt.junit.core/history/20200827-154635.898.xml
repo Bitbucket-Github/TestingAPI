@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GetRunner (1)" project="CucumberWithAPI" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.GetRunner" time="3.557">
+    <testsuite name="Feature to check Get Method of API" time="3.557">
+      <testcase name="User able to Get the List of Users" classname="Feature to check Get Method of API" time="3.557"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,40 @@
+package StepDefinition;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class GetStep {
+	
+	private static final String BASE_URL = "https://gorest.co.in/public-api";
+	private static Response response;
+	
+	@Given("I am a Authorized User")
+	public void i_am_a_authorized_user() {
+		RestAssured.baseURI = BASE_URL;
+		RequestSpecification httpRequest=RestAssured.given();
+		httpRequest.auth().oauth2("243b030a622a146bf10d1fbfeae4e032cd813b50f8aa6ce074dc46504b201516");
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+	@Given("I set Get User api endpoint")
+	public void i_set_get_user_api_endpoint() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("Send GET HTTP request")
+	public void send_get_http_request() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("I receive valid HTTP response code")
+	public void i_receive_valid_http_response_code() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

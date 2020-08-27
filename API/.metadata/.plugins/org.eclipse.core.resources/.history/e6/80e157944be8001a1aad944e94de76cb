@@ -1,0 +1,13 @@
+@get
+Feature: Feature to check Get Method of API
+
+Background: User has Bearer token for Authorization
+	Given I am a Authorized User
+
+  @tag1
+  Scenario: User able to Get the List of Users
+    Given I set Get User api endpoint
+    When Send GET HTTP request
+    Then I receive valid HTTP response code
+
+

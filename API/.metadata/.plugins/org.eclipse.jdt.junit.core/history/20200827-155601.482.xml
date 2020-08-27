@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GetRunner (1)" project="CucumberWithAPI" tests="3" started="3" failures="0" errors="2" ignored="0">
+  <testsuite name="Runner.GetRunner" time="2.24">
+    <testsuite name="Feature to check Get Method of API" time="2.24">
+      <testcase name="User able to Get the List of Users" classname="Feature to check Get Method of API" time="2.199"/>
+      <testcase name="User able to Get the Single User details" classname="Feature to check Get Method of API" time="0.036">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Send Get HTTP request for Single User" is undefined. You can implement it using the snippet(s) below:
+
+@When("Send Get HTTP request for Single User")
+public void send_get_http_request_for_single_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Response for User details not found" classname="Feature to check Get Method of API" time="0.004">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Send Get HTTP request for user" is undefined. You can implement it using the snippet(s) below:
+
+@When("Send Get HTTP request for user")
+public void send_get_http_request_for_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Then("Verify the reponse Code")
+public void verify_the_reponse_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

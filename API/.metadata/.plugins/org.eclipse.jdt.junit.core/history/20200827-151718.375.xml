@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GetRunner (1)" project="CucumberWithAPI" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.GetRunner" time="0.068">
+    <testsuite name="Feature to check Get Method of API" time="0.068">
+      <testcase name="User able to Get the List of Users" classname="Feature to check Get Method of API" time="0.068">
+        <error>io.cucumber.junit.UndefinedStepException: The step "I am a Authorized User" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I am a Authorized User")
+public void i_am_a_authorized_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("I set Get User api endpoint")
+public void i_set_get_user_api_endpoint() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Send GET HTTP request")
+public void send_get_http_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I receive valid HTTP response code")
+public void i_receive_valid_http_response_code() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
