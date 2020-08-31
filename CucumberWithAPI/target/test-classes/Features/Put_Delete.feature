@@ -1,4 +1,4 @@
-@Post
+@Put_Delete
 Feature: Feature to check the Put & Delete Method of API
 
 Background: User has Bearer token for Authorization

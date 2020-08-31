@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src\\test\\java\\Features\\Get.feature", glue = {"StepDefinition"},
-        monochrome = true
+        monochrome = true, plugin = {"pretty", "html:target/cucumber-reports/cucumber-report1.html","json:target/cucumber-reports/CucumberTestReport1.json"}
 )
 
 public class GetRunner{

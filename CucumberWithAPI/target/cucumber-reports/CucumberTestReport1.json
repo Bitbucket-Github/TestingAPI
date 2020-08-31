@@ -1,0 +1,258 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User has Bearer token for Authorization",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am authorized User",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.i_am_authorized_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-31T09:25:39.064Z",
+        "line": 8,
+        "name": "Update the existing record",
+        "description": "",
+        "id": "feature-to-check-the-put-\u0026-delete-method-of-api;update-the-existing-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter the details to update",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.i_enter_the_details_to_update()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1526900400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Send PUT HTTP request",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.send_put_http_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10970200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify the responce code",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.verify_the_responce_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Post"
+          },
+          {
+            "name": "@UpdateExisting"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User has Bearer token for Authorization",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am authorized User",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.i_am_authorized_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-31T09:25:40.614Z",
+        "line": 14,
+        "name": "Update the created record",
+        "description": "",
+        "id": "feature-to-check-the-put-\u0026-delete-method-of-api;update-the-created-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter details to update",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.i_enter_details_to_update()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2640963900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Send HTTP PUT request",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.send_http_put_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10001300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify the HTTP responce code",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.verify_the_http_responce_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Post"
+          },
+          {
+            "name": "@UpdateCreated"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User has Bearer token for Authorization",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am authorized User",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.i_am_authorized_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-31T09:25:43.271Z",
+        "line": 20,
+        "name": "Delete a record",
+        "description": "",
+        "id": "feature-to-check-the-put-\u0026-delete-method-of-api;delete-a-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2627308800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Send DELETE HTTP request",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.send_delete_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8998300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Verify responce code",
+            "match": {
+              "location": "StepDefinition.Put_DeleteStepDef.verify_responce_code()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Post"
+          },
+          {
+            "name": "@Delete"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to check the Put \u0026 Delete Method of API",
+    "description": "",
+    "id": "feature-to-check-the-put-\u0026-delete-method-of-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Put_Delete.feature",
+    "tags": [
+      {
+        "name": "@Post",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]"
+          },
+          {
+            "name": "@RegisteredEmail"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to check the Post Method of API",
+    "description": "",
+    "id": "feature-to-check-the-post-method-of-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Post.feature",
+    "tags": [
+      {
+        "name": "@Post",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

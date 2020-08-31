@@ -122,6 +122,13 @@
 							<exclude>**/*Put_DeleteRunner.java</exclude>
 						</includes>
 					</configuration>
+					<dependencies>
+      <dependency>
+        <groupId>org.apache.maven.surefire</groupId>
+        <artifactId>surefire-junit47</artifactId>
+        <version>2.22.1</version>
+      </dependency>
+    </dependencies>
 				</plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

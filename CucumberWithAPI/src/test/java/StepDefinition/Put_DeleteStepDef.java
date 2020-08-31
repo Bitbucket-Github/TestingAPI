@@ -1,5 +1,6 @@
 package StepDefinition;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
@@ -20,6 +21,16 @@ public class Put_DeleteStepDef {
 	String responseBody;
 	JSONObject requestParams=new JSONObject();
 	JsonPath jsonPathEvaluator;
+	int length = 10;
+	boolean useLetters = true;
+	boolean useNumbers = true;
+	String Randomemail;
+	String Randomname;
+	String emailNew;
+	int min = 1000;
+    int max = 1050;
+    int random_int;
+    String delUri;
 
 @Given("I am authorized User")
 public void i_am_authorized_user() {
@@ -30,7 +41,9 @@ public void i_am_authorized_user() {
 
 @When("I enter the details to update")
 public void i_enter_the_details_to_update() {
-	requestParams.put("name", "Agnimitra Sinha DM");
+	
+	Randomname = RandomStringUtils.randomAlphabetic(length);
+	requestParams.put("name", Randomname);
 	 requestParams.put("email", "md_agnimitra_sinha@emmerich.info");
 	 requestParams.put("status", "Active");
 	 
@@ -53,8 +66,11 @@ public void verify_the_responce_code() {
 
 @When("I enter details to update")
 public void i_enter_details_to_update() {
+	
+	Randomemail = RandomStringUtils.random(length, useLetters, useNumbers);
+	emailNew = Randomemail +"@" + Randomemail +".com";
 	 requestParams.put("name", "Siva sai");
-	  requestParams.put("email", "adfaf@gamgphjksfafd.com");
+	  requestParams.put("email", emailNew);
 	  requestParams.put("status", "Active");
 	 
 	 httpRequest.header("Content-Type","application/json;charset=utf-8");
@@ -63,7 +79,7 @@ public void i_enter_details_to_update() {
 }
 @When("Send HTTP PUT request")
 public void send_http_put_request() {
-	response=httpRequest.request(Method.PUT,"/users/1640");
+	response=httpRequest.request(Method.PUT,"/users/45");
 }
 
 @Then("Verify the HTTP responce code")
@@ -77,7 +93,10 @@ public void verify_the_http_responce_code() {
 
 @When("Send DELETE HTTP request")
 public void send_delete_http_request() {
-	response=httpRequest.request(Method.DELETE,"/users/1601");
+	random_int = (int)(Math.random() * (max - min + 1) + min);
+    delUri = "/users/"+random_int;
+	response=httpRequest.request(Method.DELETE,delUri);
+	System.out.println("Resource Deleted:"+delUri);
 }
 @Then("Verify responce code")
 public void verify_responce_code() {

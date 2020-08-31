@@ -36,7 +36,7 @@ public class PostStepDef {
 		boolean useLetters = true;
 		boolean useNumbers = true;
 		String Randomemail = RandomStringUtils.random(length, useLetters, useNumbers);
-		String emailNew = Randomemail +"@" + Randomemail;
+		String emailNew = Randomemail +"@" + Randomemail + ".com";
 		 requestParams.put("name", "seshu");
 		 requestParams.put("email", emailNew);
 		 requestParams.put("gender", "Male");
